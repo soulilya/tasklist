@@ -7,7 +7,7 @@ error_reporting(E_ALL);
 include_once 'autoloader.php';
 require_once('controllers/RouterController.php');
 
-Db::connect("127.0.0.1", "root", "20041987", "tasks");
+Db::connect("127.0.0.1", "tasks", "tasks", "tasks");
 
 $router = new RouterController();
 $router->process(array($_SERVER['REQUEST_URI']));
